@@ -1,0 +1,6 @@
+{
+  "name": "Mercado Envios - Pagamento Seguro",
+  "description": "Tela de pedido e pagamento seguro estilo Mercado Envios para 6 Caixas de abelhas sem ferrão (4 Jandaíra e 2 Uruçu Cinzenta).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
