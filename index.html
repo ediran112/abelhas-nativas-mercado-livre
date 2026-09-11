@@ -3,13 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        try {
+          var origFetch = window.fetch;
+          var currentFetch = origFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return currentFetch;
+            },
+            set: function(newFetch) {
+              currentFetch = newFetch;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {}
+      })();
+    </script>
     <title>Compra Segura Mercado Envios</title>
     <meta name="description" content="Compra Segura Mercado Envios - 6 Caixas de abelhas sem ferrão 4 Jandaíra e 2 uruçu cinzenta" />
+    <meta property="og:site_name" content="Mercado Envios" />
     <meta property="og:title" content="Compra Segura Mercado Envios" />
     <meta property="og:description" content="Compra Segura Mercado Envios - 6 Caixas de abelhas sem ferrão 4 Jandaíra e 2 uruçu cinzenta" />
     <meta property="og:image" content="https://pub-fd818db5a54a4e58b400698670a0a5d8.r2.dev/screenshot-20260910211312.png" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Compra Segura Mercado Envios" />
+    <meta name="twitter:description" content="Compra Segura Mercado Envios - 6 Caixas de abelhas sem ferrão 4 Jandaíra e 2 uruçu cinzenta" />
+    <meta name="twitter:image" content="https://pub-fd818db5a54a4e58b400698670a0a5d8.r2.dev/screenshot-20260910211312.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
