@@ -16,7 +16,7 @@ import {
 
 const PRODUCT_TITLE = 'Duas caixas de uruçu-cinzenta (Melipona fasciculata) com envio para todo o Brasil';
 const PRODUCT_IMAGE = 'https://pub-fd818db5a54a4e58b400698670a0a5d8.r2.dev/screenshot-20260910211312.png';
-const PAYMENT_URL = 'https://mpago.la/2ifiire';
+const PAYMENT_URL = 'https://www.mercadopago.com.br/payment-link/v1/redirect?link-id=8eb6de8e-ee08-438f-840f-9a334677e4de&source=link';
 const MERCADO_LIVRE_LOGO = 'https://logodownload.org/wp-content/uploads/2016/08/mercado-livre-logo-8.png';
 
 export default function App() {
